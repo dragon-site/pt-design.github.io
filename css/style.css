@@ -1,0 +1,220 @@
+html,body {
+    font-family: 'PT Sans', sans-serif;
+}
+h2,.pCard .number {
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+h2,h4 {
+    margin-bottom: 50px;
+}
+h4 {
+    font-size: 1.3rem
+}
+a {
+    text-decoration: none!important;
+}
+.mainInfo {
+    height: 100%;
+    width: 440px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #162c35;
+    color: #718792;
+    overflow: hidden;
+}
+.hideScroll {
+    overflow-y: auto;
+    width: 460px;
+    height: inherit;
+    padding: 80px 100px 80px 80px;
+}
+.justEmail {
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 25px;
+    color: #FFE0E9!important;
+    background: #FF6090;
+    font-size: 1.2rem;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.justEmail:hover {
+    opacity: 0.8;
+}
+.textEmail {
+    display: none;
+    margin-left: 20px;
+    margin-bottom: -24px;
+}
+.social {
+    margin-top: 80px;
+}
+.social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    opacity: 0.7;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin-right: 8px;
+}
+.social a:hover,.social a:focus,
+.igCard .igbutton:hover,.igCard .igbutton:focus {
+    opacity: 1;
+}
+.social a.in {
+    background: url("../img/linkedin-logo.svg") center 9px no-repeat;
+    background-size: 50%;
+}
+.social a.ig {
+    background: url("../img/instagram-logo.svg") center no-repeat;
+    background-size: 50%;
+}
+.social a.tg {
+    background: url("../img/telegram-logo.svg") 8px center no-repeat;
+    background-size: 50%;
+}
+.portfolio {
+    padding-left: 440px;
+    width: 100%;
+    max-width: 1920px;
+    background: #718792;
+}
+.pCard {
+    position: relative;
+    width: 100%;
+    padding: 110px 95px 120px 95px;
+    text-align: center;
+}
+.desktopScreen {
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.8);
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.8);
+}
+.pCard .number {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    text-align: right;
+    color: #fff;
+}
+.pCard .pInfo {
+    position: absolute;
+    bottom: 65px;
+    left: 80px;
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.pCard img {
+    max-width: 100%;
+    margin: 30px 0;
+}
+.pCard:nth-child(1) {
+    background: #0a161b;
+    height: inherit;
+}
+.pCard:nth-child(2) {
+    background: #28232b;
+}
+.pCard:nth-child(2) img {
+    margin: 0;
+}
+.pCard:nth-child(3) {
+    background: #173e46;
+}
+.pCard:nth-child(4) {
+    background: #2d4567;
+}
+.pCard:nth-child(5) {
+    background: #4e327b;
+}
+.igCard {
+    padding: 140px 80px 80px 80px;
+    background: #0a161b;
+    height: inherit;
+    text-align: center;
+}
+.igCard img {
+    width: 32%;
+    margin: 30px 0 0 0;
+}
+.igCard img:hover {
+    opacity: 0.9;
+}
+.igCard .igbutton {
+    display: inline-block;
+    padding: 20px 50px;
+    color: #718792;
+    background: none;
+    border: 1px solid #718792;
+    opacity: 0.7;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+@media(max-width:1199px){
+        .pCard {
+            padding: 90px 75px 100px 75px;
+        }
+        .pCard .number {
+            right: 60px;
+            top: 50px;
+        }
+        .pCard .pInfo {
+            left: 60px;
+            bottom: 50px;
+        }
+    }
+@media(max-width:991px){
+    .mainInfo {
+        position: relative;
+        height: inherit;
+        width: 100%; 
+    }
+    .hideScroll {
+        padding: 40px;
+    }
+    .portfolio {
+        padding: 0;
+    }
+    .pCard {
+        padding: 80px 40px 100px 40px;
+    }
+    .pCard .number {
+        right: 40px;
+        top: 40px;
+    }
+    .pCard .pInfo {
+        left: 40px;
+        bottom: 40px;
+    }
+}
+@media(max-width:500px){
+    .hideScroll {
+        width: 100%
+    }
+    .pCard {
+        padding: 80px 20px 100px 20px;
+    }
+    .pCard .number {
+        right: 20px;
+        top: 40px;
+    }
+    .pCard .pInfo {
+        left: 20px;
+        bottom: 40px;
+    }
+}
